@@ -1,0 +1,9 @@
+README.md
+setup.py
+britneh_lambadata.egg-info/PKG-INFO
+britneh_lambadata.egg-info/SOURCES.txt
+britneh_lambadata.egg-info/dependency_links.txt
+britneh_lambadata.egg-info/top_level.txt
+britneh_lambdata/__init__.py
+britneh_lambdata/britneh.py
+britneh_lambdata/polos.py
