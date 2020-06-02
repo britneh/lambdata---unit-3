@@ -13,13 +13,13 @@ class Flower():
 if __name__ == "__main__":
 
     rose = Flower("Winter", "5", "rose")
-    print(polo.color, polo.size, polo.price)
-    rose.fold()
+    print(rose.season, rose.size, rose.species)
+    rose.pick()
 
-    daisy = Flower(color="Yellow", size="Small", price=69.99)
-    print(polo2.color, polo2.size, polo2.price)
-    polo2.fold()
+    daisy = Flower("summer", "2", "daisy")
+    print(daisy.season, daisy.size, daisy.species)
+    daisy.pick()
 
-    polo3 = Polo(color="Green", size="Medium", price=69.99)
-    print(polo3.color, polo3.size, polo3.price)
-    polo3.fold()
+    tulip = Flower("spring", "3", "tulip")
+    print(tulip.season, tulip.size, tulip.species)
+    tulip.pick()
