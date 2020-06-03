@@ -7,7 +7,7 @@ setup(
     name="britneh_lambadata",  # the name that you will install via pip
     version="1.0",
     author="Britne Hackett",
-    author_email="brhacket@email.com",
+    author_email="brhacket@gmail.com",
     description="A couple of helpful functions",
     long_description=long_description,
     long_description_content_type="text/markdown",
