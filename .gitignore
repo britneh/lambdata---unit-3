@@ -1,0 +1,5 @@
+#ignore artificats from the distribution proces
+
+build/
+dist/
+*.egg-info
