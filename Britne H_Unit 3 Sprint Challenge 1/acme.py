@@ -9,46 +9,50 @@
 
 import random
 
-class Product():
-  def __init__(self, name):
-    self.name = name
-    self.price = 10
-    self.weight = 20
-    self.flame = .5
-    self.iden = random.randint(1000000, 9999999)
-  def stealability(self):
-    self.steal = (self.price/self.weight)
-    if (self.steal < .5):
-      print("Not so stealable...")
-    elif (self.steal < 1):
-      print ("Kinda stealable.")
-    else:
-      print ("Very stealable!")
 
-  def explode(self):
-    self.explode = (self.flame * self.weight)
-    if (self.explode < 10):
-      print("...fizzle.")
-    elif (self.explode < 50):
-      print ("...boom!")
-    else:
-      print ("...BABOOM!!")
+class Product():
+    def __init__(self, name):
+        self.name = name
+        self.price = 10
+        self.weight = 20
+        self.flame = .5
+        self.iden = random.randint(1000000, 9999999)
+
+    def stealability(self):
+        self.steal = (self.price / self.weight)
+        if (self.steal < .5):
+            print("Not so stealable...")
+        elif (self.steal < 1):
+            print("Kinda stealable.")
+        else:
+            print("Very stealable!")
+
+    def explode(self):
+        self.explode = (self.flame * self.weight)
+        if (self.explode < 10):
+            print("...fizzle.")
+        elif (self.explode < 50):
+            print("...boom!")
+        else:
+            print("...BABOOM!!")
+
 
 class BoxingGlove(Product):
-  def __init__(self, name, price, weight, flame, iden): 
-    self.name = name
-    self.price = 10
-    self.weight = 10
-    self.flame = .5
-    self.iden = random.randint(1000000, 9999999)
-  def explode(self):
-    print("...it's a glove.")
-  def punch(self):
-    if (self.weight  < 5):
-      print("That tickles.")
-    elif (15 > self.weight >= 5):
-      print ("Hey that hurt!")
-    else:
-      print ("OUCH!")
-  
+    def __init__(self, name):
+        super().__init__(name)
+        self.name = name
+        self.price = 10
+        self.weight = 10
+        self.flame = .5
+        self.iden = random.randint(1000000, 9999999)
 
+    def explode(self):
+        print("...it's a glove.")
+
+    def punch(self):
+        if (self.weight < 5):
+            print("That tickles.")
+        elif (15 > self.weight >= 5):
+            print("Hey that hurt!")
+        else:
+            print("OUCH!")

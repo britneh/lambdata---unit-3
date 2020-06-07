@@ -261,11 +261,15 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
+Code reviews, simply put, help make better code.  The most important part is getting rid of bugs to help make the code more reproducible.  That is one of the reasons we use automated tests like unittest to help us quickly review our code and get out kinks earlier. Once passed on to a peer, receiving feedback helps with making the code more readable. This makes it more efficient to continue to build on, resulting in a higher quality product.  Code reviews also help with communication amd familiarity with other peers in the case they would need to jump in and help out. 
+  
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
 
-Answer both of these questions (baseline ~5 sentences) here in text.
+A container would package applications into a predictable environment that could be used anywhere. This would also help with any individuals needing to move from one device to the other because it would stay true to an entire runtime environment.  This would include the application, its dependencies and other files neede to run it all piece together as one unit.  That would absolutley help from making things confusing as any issues brought on by system differences would now be obselete.  It also minimizes the usage of space and would allow a server to host a lot more. 
+
 
 ### Part 8 - Turn it in!
 
